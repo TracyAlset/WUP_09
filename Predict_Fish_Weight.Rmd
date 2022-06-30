@@ -85,6 +85,12 @@ The best model is the one that has Length1, Length2, Length3, Height and Width ,
 
 
 ## Roach
+```{r}
+Roach<-filter(fish, Species=="Roach")
+Roach<- select(Roach, -Species )
+```
+
+
 
 ### Best Models
 
