@@ -63,6 +63,7 @@ Pike<- select(Pike, -Species )
 ```
 
 
+### Best Models
 ```{r}
 library(leaps)
 regsubsets.out <-
@@ -78,9 +79,6 @@ as.data.frame(summary.out$outmat)
 library(car)
 subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2")
 ```
-
-
-### Best Models
 
 ### Best Two regressor model
 
