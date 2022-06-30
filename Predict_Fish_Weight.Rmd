@@ -56,12 +56,15 @@ subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2
 
 
 
-
-
-
-
-
 ## Pike
+```{r}
+Pike<-filter(fish, Species=="Pike")
+Pike<- select(Pike, -Species )
+```
+
+
+
+
 
 ### Best Models
 
