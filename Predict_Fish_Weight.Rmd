@@ -113,8 +113,8 @@ The best regressor model is Length3 and Width, because it has the highest adjust
 
 
 ## Final Summary Statements
-
-
+We used a special test that can compare the relationship between the weight of the fish and the other characteristics of it like length, width, height....
+We looked for the the model that had the highest adjusted r squared value and that model was the one that affected the weight of the fish the most.
 
 
 
