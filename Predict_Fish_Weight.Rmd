@@ -52,7 +52,7 @@ subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2
 ```
 ### Best Two regressor model
 
- The best regression model is the one with the highest adjusted r squared value and that is Height and Width and it has 2 regressors , so it is the model we're looking for.
+ The best regression model is the one with the highest adjusted r squared value and that is Height and Width and it has 2 regressors( but this isn't always the case) , so it is the model we're looking for.
 
 
 
@@ -81,6 +81,8 @@ subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2
 ```
 
 ### Best Two regressor model
+The best model is the one that has Length1, Length2, Length3, Height and Width , because it has the highest adjusted r squared value. This means that all of these variables together affect the wight of the pike fish the most.
+
 
 ## Roach
 
