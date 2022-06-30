@@ -1,7 +1,7 @@
 ---
 title: "Weight of Fish"
-author: "Your Name"
-date: "`r Sys.Date()`"  
+author: "Tracy Alset"
+date: "06/30/22"  
 output: 
   html_document:
     number_sections: true
