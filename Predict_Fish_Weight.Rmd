@@ -90,10 +90,31 @@ Roach<-filter(fish, Species=="Roach")
 Roach<- select(Roach, -Species )
 ```
 
-
-
 ### Best Models
+```{r}
+library(leaps)
+regsubsets.out <-
+    regsubsets(Weight ~ .,
+               data = Roach,
+               nbest = 1,       # 1 best model for each number of predictors
+               nvmax = NULL,    # NULL for no limit on number of variables
+               force.in = NULL, force.out = NULL,
+               method = "exhaustive")
+
+summary.out <- summary(regsubsets.out)
+as.data.frame(summary.out$outmat)
+library(car)
+subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2")
+```
+
 
 ### Best Two regressor model
+The best regressor model is Length3 and Width, because it has the highest adjusted r squared value, so this means that the Length3 variable and Width variable( together ) affect the weight of the roaches the most.
+
 
 ## Final Summary Statements
+
+
+
+
+
